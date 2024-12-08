@@ -21,16 +21,16 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
               setIsNavModalClose(true);
             }}
           >
-            <span className="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block">
+            <span className="bg-dark-2 rounded-pill m-4   mb-lg-1 d-none d-lg-inline-block">
               <img
                 className="img-fluid rounded-pill d-block"
-                src="images/profile.jpg"
+                src="Masum/MMRahman.png"
                 title="I'm Simone"
                 alt="profile"
               />
             </span>
             <h1 className="text-5 text-white text-center mb-0 d-lg-block">
-              Simone Olivia
+              Md. Mashiur Rahman
             </h1>
           </Link>
           {/* Logo End */}
@@ -93,6 +93,23 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   }}
                 >
                   What I Do
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link "
+                  smooth
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                  activeClass="active"
+                  spy
+                  to="WorkingProcess"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsNavModalClose(true);
+                  }}
+                >
+                  Working Process
                 </Link>
               </li>
               <li className="nav-item">

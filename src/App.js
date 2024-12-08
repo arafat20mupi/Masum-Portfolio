@@ -15,6 +15,7 @@ import TermsAndConditions from "./components/TermsAndConditions";
 import Disclaimer from "./components/Disclaimer";
 import PreLoader from "./components/Preloader";
 import { Tooltip } from "./components/Tooltip";
+import WorkingProcess from "./components/WorkingProcess";
 
 function App() {
   const classicHeader = commonConfig.classicHeader;
@@ -83,6 +84,10 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></Services>
+            <WorkingProcess
+              classicHeader={classicHeader}
+              darkTheme={darkTheme}
+            ></WorkingProcess>
             <Resume
               classicHeader={classicHeader}
               darkTheme={darkTheme}

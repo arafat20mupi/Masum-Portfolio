@@ -7,68 +7,73 @@ const Resume = ({ classicHeader, darkTheme }) => {
       yearRange: "2022- 2025",
       title: "Computer Science",
       place: "Northern University Bangladesh",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: "Focusing on innovative solutions and technology-driven projects, with a specialization in advanced problem-solving techniques. Dedicated to leveraging technical expertise to design and implement transformative digital experiences and drive meaningful advancements in the tech industry.",
     },
     {
-      yearRange: "2005 - 2008",
-      title: "Bachelor Degree",
-      place: "University of California",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2019 - 2020",
+      title: "Professional Graphic Design",
+      place: "Creative IT Institute",
+      desc: "Completed a Professional Graphic Design course, honing skills in visual communication, design principles, and creative software. Passionate about delivering impactful designs that enhance user experience and brand identity in the digital world",
     },
     {
-      yearRange: "2009 - 2012",
-      title: "Master Degree",
-      place: "Harvard University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2017 - 2021",
+      title: "Diploma In Engineering",
+      place: "Munshiganj Polytechnic Institute",
+      desc: "Studied computer technology with an emphasis on practical, hands-on skills in the field. Developed a strong foundation in systems and infrastructure, alongside a passion for applying technology to solve complex, real-world challenges in both technical and design contexts.",
+    },
+    {
+      yearRange: "2015- 2016",
+      title: "Science",
+      place: "Araihazar Pilot Hight School",
+      desc: "Completed secondary education in Science, developing a strong foundation in analytical thinking and problem-solving skills. Focused on building a solid academic base for future studies in technology and design.",
     },
   ];
 
   const experienceDetails = [
     {
-      yearRange: "2012 - 2013",
-      title: "Jr. UI UX Designer",
-      place: "Themeforest",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2024 - Present",
+      title: "CEO",
+      place: "Wizardd IT",
+      desc: "Leading a dynamic agency offering comprehensive solutions, including app and web development, UI/UX design, and digital experiences. Fostering innovation and collaboration with cross-functional teams to deliver impactful, user-focused solutions across platforms.",
     },
     {
-      yearRange: "2014 - 2016",
-      title: "Jr. Product Designer",
-      place: "Dribbble",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2023 - 2024",
+      title: "UI/UX & Graphic Designer",
+      place: "Sinso Technology",
+      desc: "Developed complete branding strategies, including logo design, color palettes, and visual identity. Worked with teams to deliver cohesive, market-driven designs, enhancing product visibility and user engagement across platforms.",
     },
     {
-      yearRange: "2017 - 2019",
-      title: "Product Designer",
-      place: "Adobe",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2022 - 2023",
+      title: "Graphic Designer",
+      place: "Red Bubble",
+      desc: "Designed custom branding and digital interfaces, ensuring high-quality, tailored solutions that met client needs. Delivered impactful designs that strengthened brand identities and provided meaningful digital experiences for various clients.",
+    },
+    {
+      yearRange: "2020 - 2023",
+      title: "Freelance Designer",
+      place: "Various Clients",
+      desc: "Offered custom design solutions, including branding and digital interfaces, delivering high-quality, tailored results that met clients’ unique needs. Focused on creating impactful and effective designs to enhance brand visibility and user experience.",
     },
   ];
 
   const skills = [
     {
-      name: "Web Design",
-      percent: 65,
-    },
-    {
-      name: "HTML/CSS",
+      name: "UI/UX Design (Web & Mobile)",
       percent: 95,
     },
     {
-      name: "JavaScript",
+      name: "UI/UX Design (Web & Mobile)",
+      percent: 90,
+    },
+    {
+      name: "Web & App Development",
       percent: 80,
     },
     {
-      name: "React JS",
-      percent: 70,
+      name: "SEO & Digital Marketing",
+      percent: 90,
     },
-    {
-      name: "Angular Js",
-      percent: 60,
-    },
-    {
-      name: "Bootstrap",
-      percent: 99,
-    },
+
   ];
 
   return (
@@ -118,19 +123,18 @@ const Resume = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "bg-dark" : "bg-white border")
                   }
                 >
-                  <div className=" d-flax justify-content-center w-full " >
-                    <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                      {value.title}
-                    </h3>
-                    <p className="badge bg-primary text-2 fw-400">
-                      {value.yearRange}
-                    </p>
-                  </div>
+                  <p className="badge bg-primary text-2 fw-400">
+                    {value.yearRange}
+                  </p>
+
+                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                    {value.title}
+                  </h3>
 
                   <p className={darkTheme ? "text-primary" : "text-danger"}>
                     {value.place}
                   </p>
-                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+                  <p className={"mb-0  " + (darkTheme ? "text-white-50" : "")}>
                     {value.desc}
                   </p>
                 </div>

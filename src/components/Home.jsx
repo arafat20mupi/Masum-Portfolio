@@ -45,7 +45,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                       loop: true,
                     }}
                   />
-                  <h4 className="text-5 w-2  text-light">delivering creative solutions through stunning visuals and impactful designs.</h4>
+                  <h4 className="text-4 w-2  text-light">delivering creative solutions through stunning visuals and impactful designs.</h4>
                 </p>
                 <a
                   href="#contact"
